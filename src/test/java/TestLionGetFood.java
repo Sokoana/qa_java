@@ -11,10 +11,10 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionTestGetFood {
+public class TestLionGetFood {
 
     @Mock
-    Feline feline;
+     private Feline feline;
     //замокали объект типа Feline
 
     @Test()

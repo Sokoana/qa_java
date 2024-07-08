@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Lion {
 
-    boolean hasMane;
-    Feline feline;/*переменная для инъекции зависимостей - чтобы избежать привязки к
+    private boolean hasMane;
+   private Feline feline;/*переменная для инъекции зависимостей - чтобы избежать привязки к
     классу Feline напрямую*/
 
     public Lion(String sex, Feline feline) throws Exception {

@@ -2,20 +2,19 @@ import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionTestSexWithExpected {
+public class TestLionSexWithExpected {
 
     @Mock
-    Feline feline;
+    private Feline feline;
 
     @Test(expected = Exception.class)
     public void testSexNoName() throws Exception{
-        String sexLion = "Алеша";
+        String sexLion = "Максим";
         boolean expected = false;
         Lion lion = new Lion(sexLion, feline);
         lion.doesHaveMane();

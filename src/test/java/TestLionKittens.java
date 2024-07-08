@@ -9,10 +9,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionTestKittens {
+public class TestLionKittens {
 
     @Mock
-    Feline feline;
+   private Feline feline;
 
     @Test
     public void quantityOfKittens() throws Exception{

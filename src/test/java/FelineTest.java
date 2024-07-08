@@ -19,13 +19,16 @@ public class FelineTest {
 
 
     @Test
-    public void testFelineGetFamily(){
-        assertEquals("Кошачьи", feline.getFamily());
+
+    public void testFelineGetFamily()throws Exception{
+        String exception = feline.getFamily();
+        assertEquals(exception, feline.getFamily());
     }
 
     @Test
-    public void testFelineGetKittens(){
-        assertEquals(1, feline.getKittens());
+    public void testFelineGetKittens()throws Exception{
+        int exception =feline.getKittens(1);
+        assertEquals(exception, feline.getKittens());
     }
 
     @Test

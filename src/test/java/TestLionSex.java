@@ -10,13 +10,13 @@ import org.mockito.Mock;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class LionTestSex {
+public class TestLionSex {
 
     private final String sexLion;
     private final boolean expected;
 
 
-    public LionTestSex(String sexLion, boolean expected){
+    public TestLionSex(String sexLion, boolean expected){
         this.sexLion = sexLion;
         this.expected = expected;
     }
@@ -31,7 +31,7 @@ public class LionTestSex {
     }
 
     @Mock
-    Feline feline;
+    private Feline feline;
     //замокали объект типа Feline
 
     @Test

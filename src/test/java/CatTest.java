@@ -18,7 +18,7 @@ import static org.junit.Assert.assertEquals;
 public class CatTest {
 
     @Mock
-    Feline feline;
+    private Feline feline;
     //создали болванку переменной, которая будет заглушкой
 
     @Test
